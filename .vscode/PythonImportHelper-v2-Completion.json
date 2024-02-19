@@ -1,0 +1,750 @@
+[
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterator",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "context",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "sqlalchemy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "engine_from_config",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "pool",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ARRAY",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "TIMESTAMP",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "fileConfig",
+        "importPath": "logging.config",
+        "description": "logging.config",
+        "isExtraImport": true,
+        "detail": "logging.config",
+        "documentation": {}
+    },
+    {
+        "label": "BaseSettings",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "RedirectResponse",
+        "importPath": "starlette.responses",
+        "description": "starlette.responses",
+        "isExtraImport": true,
+        "detail": "starlette.responses",
+        "documentation": {}
+    },
+    {
+        "label": "HTTP_201_CREATED",
+        "importPath": "starlette.status",
+        "description": "starlette.status",
+        "isExtraImport": true,
+        "detail": "starlette.status",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "DataError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "alembic.config",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "alembic.config",
+        "description": "alembic.config",
+        "detail": "alembic.config",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "TestClient",
+        "importPath": "starlette.testclient",
+        "description": "starlette.testclient",
+        "isExtraImport": true,
+        "detail": "starlette.testclient",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "api.main",
+        "description": "api.main",
+        "isExtraImport": true,
+        "detail": "api.main",
+        "documentation": {}
+    },
+    {
+        "label": "SQL_BASE",
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "isExtraImport": true,
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "InMemoryTodoRepository",
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "isExtraImport": true,
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "SQLTodoRepository",
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "isExtraImport": true,
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "Todo",
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "isExtraImport": true,
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "TodoFilter",
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "isExtraImport": true,
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "TodoRepository",
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "isExtraImport": true,
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "get_engine",
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "isExtraImport": true,
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.8b436aaaee2d_create_urls_table",
+        "description": "alembic.versions.8b436aaaee2d_create_urls_table",
+        "peekOfCode": "def upgrade() -> None:\n     op.create_table('urls',\n    sa.Column('id', sa.Integer(), nullable=False),\n    sa.Column('long_url', sa.String(), nullable=False),\n    sa.Column('short_url', sa.String(), nullable=False),\n    sa.Column('created_at', sa.TIMESTAMP(), server_default=sa.text('now()'), nullable=False),\n    sa.PrimaryKeyConstraint('id')\n    )\ndef downgrade() -> None:\n   op.drop_table(\"urls\")",
+        "detail": "alembic.versions.8b436aaaee2d_create_urls_table",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "alembic.versions.8b436aaaee2d_create_urls_table",
+        "description": "alembic.versions.8b436aaaee2d_create_urls_table",
+        "peekOfCode": "def downgrade() -> None:\n   op.drop_table(\"urls\")",
+        "detail": "alembic.versions.8b436aaaee2d_create_urls_table",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_offline",
+        "kind": 2,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "def run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation\n    we don't even need a DBAPI to be available.\n    Calls to context.execute() here emit the given string to the\n    script output.\n    \"\"\"\n    url = config.get_main_option(\"sqlalchemy.url\")",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_online",
+        "kind": 2,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "def run_migrations_online() -> None:\n    \"\"\"Run migrations in 'online' mode.\n    In this scenario we need to create an Engine\n    and associate a connection with the context.\n    \"\"\"\n    connectable = engine_from_config(\n        config.get_section(config.config_ini_section, {}),\n        prefix=\"sqlalchemy.\",\n        poolclass=pool.NullPool,\n    )",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "config = context.config\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.\nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here\n# for 'autogenerate' support\n# from myapp import mymodel\n# target_metadata = mymodel.Base.metadata\ntarget_metadata = None",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "target_metadata",
+        "kind": 5,
+        "importPath": "alembic.env",
+        "description": "alembic.env",
+        "peekOfCode": "target_metadata = None\n# other values from the config, defined by the needs of env.py,\n# can be acquired:\n# my_important_option = config.get_main_option(\"my_important_option\")\n# ... etc.\ndef run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation",
+        "detail": "alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "api.config",
+        "description": "api.config",
+        "peekOfCode": "class Settings(BaseSettings):\n    database_hostname: str\n    database_port: str\n    database_password: str\n    database_name: str\n    database_username: str\n    database_url: str\n    # secret_key: str\n    # algorithm: str\n    # access_token_expire_minutes: int",
+        "detail": "api.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "kind": 5,
+        "importPath": "api.config",
+        "description": "api.config",
+        "peekOfCode": "settings = Settings()",
+        "detail": "api.config",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "api.database",
+        "description": "api.database",
+        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "api.database",
+        "documentation": {}
+    },
+    {
+        "label": "SQLALCHEMY_DATABASE_URL",
+        "kind": 5,
+        "importPath": "api.database",
+        "description": "api.database",
+        "peekOfCode": "SQLALCHEMY_DATABASE_URL = \"postgresql://postgres:Nhatdien123@localhost:5432/url-shortener\"\nengine = create_engine(\n    SQLALCHEMY_DATABASE_URL, connect_args={\"check_same_thread\": False}\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db",
+        "detail": "api.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "api.database",
+        "description": "api.database",
+        "peekOfCode": "engine = create_engine(\n    SQLALCHEMY_DATABASE_URL, connect_args={\"check_same_thread\": False}\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:",
+        "detail": "api.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "api.database",
+        "description": "api.database",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "api.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "api.database",
+        "description": "api.database",
+        "peekOfCode": "Base = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "api.database",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "api.main",
+        "description": "api.main",
+        "peekOfCode": "app = FastAPI(swagger_ui_parameters={\"tryItOutEnabled\": True})\n@app.get(\"/\")\nasync def root():\n    return RedirectResponse(app.docs_url)",
+        "detail": "api.main",
+        "documentation": {}
+    },
+    {
+        "label": "Urls",
+        "kind": 6,
+        "importPath": "api.models",
+        "description": "api.models",
+        "peekOfCode": "class Urls(Base):\n    __tablename__ = \"urls\"\n    id = Column(Integer, primary_key=True, index=True, nullable=False)\n    long_url = Column(String, index=True, nullable=False)\n    short_url = Column(String, index=True, nullable=False)\n    created_at = Column(TIMESTAMP, server_default=text(\"now()\"), nullable=False)",
+        "detail": "api.models",
+        "documentation": {}
+    },
+    {
+        "label": "TodoInDB",
+        "kind": 6,
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "peekOfCode": "class TodoInDB(SQL_BASE):  # type: ignore\n    __tablename__ = \"todo\"\n    id = Column(Integer, primary_key=True, autoincrement=True)\n    key = Column(String(length=128), nullable=False, unique=True)\n    value = Column(String(length=128), nullable=False)\n    done = Column(Boolean, default=False)\nclass Todo(BaseModel):\n    key: str\n    value: str\n    done: bool = False",
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "Todo",
+        "kind": 6,
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "peekOfCode": "class Todo(BaseModel):\n    key: str\n    value: str\n    done: bool = False\nclass TodoFilter(BaseModel):\n    limit: Optional[int] = None\n    key_contains: Optional[str] = None\n    value_contains: Optional[str] = None\n    done: Optional[bool] = None\nclass TodoRepository:  # Interface",
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "TodoFilter",
+        "kind": 6,
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "peekOfCode": "class TodoFilter(BaseModel):\n    limit: Optional[int] = None\n    key_contains: Optional[str] = None\n    value_contains: Optional[str] = None\n    done: Optional[bool] = None\nclass TodoRepository:  # Interface\n    def __enter__(self):\n        return self\n    def __exit__(self, exc_type, exc_val, exc_tb):\n        pass",
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "TodoRepository",
+        "kind": 6,
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "peekOfCode": "class TodoRepository:  # Interface\n    def __enter__(self):\n        return self\n    def __exit__(self, exc_type, exc_val, exc_tb):\n        pass\n    def save(self, todo: Todo) -> None:\n        raise NotImplementedError()\n    def get_by_key(self, key: str) -> Optional[Todo]:\n        raise NotImplementedError()\n    def get(self, todo_filter: TodoFilter) -> List[Todo]:",
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "InMemoryTodoRepository",
+        "kind": 6,
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "peekOfCode": "class InMemoryTodoRepository:  # In-memory implementation of interface\n    def __init__(self):\n        self.data = {}\n    def save(self, todo: Todo) -> None:\n        self.data[todo.key] = todo\n    def get_by_key(self, key: str) -> Optional[Todo]:\n        return self.data.get(key)\n    def get(self, todo_filter: TodoFilter) -> List[Todo]:\n        all_matching_todos = filter(\n            lambda todo: (not todo_filter.key_contains or todo_filter.key_contains in todo.key)",
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "SQLTodoRepository",
+        "kind": 6,
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "peekOfCode": "class SQLTodoRepository(TodoRepository):  # SQL Implementation of interface\n    def __init__(self, session):\n        self._session: Session = session\n    def __exit__(self, exc_type, exc_value: str, exc_traceback: str) -> None:\n        if any([exc_type, exc_value, exc_traceback]):\n            self._session.rollback()\n            return\n        try:\n            self._session.commit()\n        except DatabaseError as e:",
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "get_engine",
+        "kind": 2,
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "peekOfCode": "def get_engine(db_string: str):\n    return create_engine(db_string, pool_pre_ping=True)\nclass TodoInDB(SQL_BASE):  # type: ignore\n    __tablename__ = \"todo\"\n    id = Column(Integer, primary_key=True, autoincrement=True)\n    key = Column(String(length=128), nullable=False, unique=True)\n    value = Column(String(length=128), nullable=False)\n    done = Column(Boolean, default=False)\nclass Todo(BaseModel):\n    key: str",
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "create_todo_repository",
+        "kind": 2,
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "peekOfCode": "def create_todo_repository() -> Iterator[TodoRepository]:\n    session = sessionmaker(bind=get_engine(os.getenv(\"DB_STRING\")))()\n    todo_repository = SQLTodoRepository(session)\n    try:\n        yield todo_repository\n    except Exception:\n        session.rollback()\n        raise\n    finally:\n        session.close()",
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "SQL_BASE",
+        "kind": 5,
+        "importPath": "api.repository",
+        "description": "api.repository",
+        "peekOfCode": "SQL_BASE = declarative_base()\n@lru_cache(maxsize=None)\ndef get_engine(db_string: str):\n    return create_engine(db_string, pool_pre_ping=True)\nclass TodoInDB(SQL_BASE):  # type: ignore\n    __tablename__ = \"todo\"\n    id = Column(Integer, primary_key=True, autoincrement=True)\n    key = Column(String(length=128), nullable=False, unique=True)\n    value = Column(String(length=128), nullable=False)\n    done = Column(Boolean, default=False)",
+        "detail": "api.repository",
+        "documentation": {}
+    },
+    {
+        "label": "fake_todo_repository",
+        "kind": 2,
+        "importPath": "api.test_all",
+        "description": "api.test_all",
+        "peekOfCode": "def fake_todo_repository():\n    return InMemoryTodoRepository()\n@pytest.fixture\ndef todo_repository():\n    time.sleep(1)\n    alembicArgs = [\"--raiseerr\", \"upgrade\", \"head\"]\n    alembic.config.main(argv=alembicArgs)\n    engine = get_engine(os.getenv(\"DB_STRING\"))\n    session = sessionmaker(bind=engine)()\n    yield SQLTodoRepository(session)",
+        "detail": "api.test_all",
+        "documentation": {}
+    },
+    {
+        "label": "todo_repository",
+        "kind": 2,
+        "importPath": "api.test_all",
+        "description": "api.test_all",
+        "peekOfCode": "def todo_repository():\n    time.sleep(1)\n    alembicArgs = [\"--raiseerr\", \"upgrade\", \"head\"]\n    alembic.config.main(argv=alembicArgs)\n    engine = get_engine(os.getenv(\"DB_STRING\"))\n    session = sessionmaker(bind=engine)()\n    yield SQLTodoRepository(session)\n    session.close()\n    sessionmaker(bind=engine, autocommit=True)().execute(\n        \";\".join([f\"TRUNCATE TABLE {t} CASCADE\" for t in SQL_BASE.metadata.tables.keys()])",
+        "detail": "api.test_all",
+        "documentation": {}
+    },
+    {
+        "label": "test_example_unit_test",
+        "kind": 2,
+        "importPath": "api.test_all",
+        "description": "api.test_all",
+        "peekOfCode": "def test_example_unit_test():\n    assert 1 != 0\n@pytest.mark.integration\ndef test_contract_test(fake_todo_repository: TodoRepository, todo_repository: TodoRepository):\n    \"\"\"See https://martinfowler.com/bliki/ContractTest.html\"\"\"\n    todo = Todo(key=\"testkey\", value=\"testvalue\")\n    for repo in [fake_todo_repository, todo_repository]:\n        repo.save(todo)\n        new_todo = repo.get_by_key(\"testkey\")\n        assert new_todo and new_todo.value == \"testvalue\"",
+        "detail": "api.test_all",
+        "documentation": {}
+    },
+    {
+        "label": "test_contract_test",
+        "kind": 2,
+        "importPath": "api.test_all",
+        "description": "api.test_all",
+        "peekOfCode": "def test_contract_test(fake_todo_repository: TodoRepository, todo_repository: TodoRepository):\n    \"\"\"See https://martinfowler.com/bliki/ContractTest.html\"\"\"\n    todo = Todo(key=\"testkey\", value=\"testvalue\")\n    for repo in [fake_todo_repository, todo_repository]:\n        repo.save(todo)\n        new_todo = repo.get_by_key(\"testkey\")\n        assert new_todo and new_todo.value == \"testvalue\"\n        assert len(repo.get(TodoFilter(key_contains=\"e\"))) == 1\n        assert len(repo.get(TodoFilter(key_contains=\"e\", limit=0))) == 0\n        assert len(repo.get(TodoFilter(key_contains=\"v\"))) == 0",
+        "detail": "api.test_all",
+        "documentation": {}
+    },
+    {
+        "label": "test_repository",
+        "kind": 2,
+        "importPath": "api.test_all",
+        "description": "api.test_all",
+        "peekOfCode": "def test_repository(todo_repository: SQLTodoRepository):\n    with todo_repository as r:\n        r.save(Todo(key=\"testkey\", value=\"testvalue\"))\n    todo = r.get_by_key(\"testkey\")\n    assert todo.value == \"testvalue\"\n    with pytest.raises(IntegrityError):\n        with todo_repository as r:\n            r.save(Todo(key=\"testkey\", value=\"not allowed: unique todo keys!\"))\n    with pytest.raises(DataError):\n        with todo_repository as r:",
+        "detail": "api.test_all",
+        "documentation": {}
+    },
+    {
+        "label": "test_repository_filter",
+        "kind": 2,
+        "importPath": "api.test_all",
+        "description": "api.test_all",
+        "peekOfCode": "def test_repository_filter(todo_repository: SQLTodoRepository):\n    with todo_repository as repo:\n        repo.save(Todo(key=\"testkey\", value=\"testvalue\"))\n        repo.save(Todo(key=\"abcde\", value=\"v\"))\n    todos = repo.get(TodoFilter(key_contains=\"test\"))\n    assert len(todos) == 1\n    assert todos[0].value == \"testvalue\"\n    todos = repo.get(TodoFilter(key_contains=\"abcde\"))\n    assert len(todos) == 1\n    assert todos[0].value == \"v\"",
+        "detail": "api.test_all",
+        "documentation": {}
+    },
+    {
+        "label": "test_api",
+        "kind": 2,
+        "importPath": "api.test_all",
+        "description": "api.test_all",
+        "peekOfCode": "def test_api():\n    time.sleep(1)\n    client = TestClient(app)\n    response = client.post(\"/create/testkey?value=testvalue\")\n    assert response.status_code == 201\n    response = client.get(\"/get/testkey\")\n    assert response.status_code == 200\n    assert response.json() == {\"key\": \"testkey\", \"value\": \"testvalue\", \"done\": False}\n    response = client.get(\"/get/wrong\")\n    assert response.status_code == 404",
+        "detail": "api.test_all",
+        "documentation": {}
+    }
+]

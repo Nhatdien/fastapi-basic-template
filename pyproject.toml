@@ -20,6 +20,8 @@ SQLAlchemy = "^1.4.42"
 alembic = "^1.8.1"
 psycopg2-binary = "^2.9.9"
 httpx = "^0.26.0"
+redis = "^5.0.1"
+pydantic-settings = "^2.2.0"
 
 [tool.poetry.group.dev]
 optional = true
