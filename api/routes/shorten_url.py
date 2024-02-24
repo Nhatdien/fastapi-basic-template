@@ -43,14 +43,14 @@ def login(db: Session = Depends(database.get_db), long_url: str = None):
 
     else:
         db_url = models.Urls(long_url=long_url, short_url='')
-        db.add(db_url)
+        db.add(db_url)  # Add the db_url object to the session
         db.commit()
-        long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url).first()
-        url_with_shortened = models.Urls(long_url=long_url, short_url=encrypt_url(long_url_queried.id))
-        db.add(url_with_shortened)
+        db.refresh(db_url)
+        long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url)
+        url_id = long_url_queried.first().id
+        url_with_shortened = models.Urls(long_url=long_url, short_url=encrypt_url(url_id))
+        long_url_queried.update({"short_url": url_with_shortened.short_url}, synchronize_session=False)
         db.commit() 
-        db.refresh(url_with_shortened)
-
-        return url_with_shortened
+        return long_url_queried.first()
 
     

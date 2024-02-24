@@ -720,7 +720,7 @@
         "kind": 2,
         "importPath": "api.routes.shorten_url",
         "description": "api.routes.shorten_url",
-        "peekOfCode": "def login(db: Session = Depends(database.get_db), long_url: str = None):\n    long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url).first()\n    if long_url_queried is not None:\n        return long_url_queried\n    else:\n        db_url = models.Urls(long_url=long_url, short_url='')\n        db.add(db_url)\n        db.commit()\n        long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url).first()\n        url_with_shortened = models.Urls(long_url=long_url, short_url=encrypt_url(long_url_queried.id))",
+        "peekOfCode": "def login(db: Session = Depends(database.get_db), long_url: str = None):\n    long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url).first()\n    if long_url_queried is not None:\n        return long_url_queried\n    else:\n        db_url = models.Urls(long_url=long_url, short_url='')\n        db.add(db_url)  # Add the db_url object to the session\n        db.commit()\n        db.refresh(db_url)\n        long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url)",
         "detail": "api.routes.shorten_url",
         "documentation": {}
     },
