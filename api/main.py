@@ -1,15 +1,31 @@
-from typing import List, Optional
+from fastapi import FastAPI 
+from routes import shorten_url
+from fastapi.middleware.cors import CORSMiddleware
 
-from fastapi import Depends, FastAPI, HTTPException
-from starlette.responses import RedirectResponse
-from starlette.status import HTTP_201_CREATED
+app = FastAPI()
+
+origins = [
+    "*",
+    "http://localhost"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
-app = FastAPI(swagger_ui_parameters={"tryItOutEnabled": True})
+app.include_router(shorten_url.router)
 
-
+#Posts API
 @app.get("/")
-async def root():
-    return RedirectResponse(app.docs_url)
+def root():
+    return {"message": "siuuuuuuu!"}
 
 
+
+
+#Users API

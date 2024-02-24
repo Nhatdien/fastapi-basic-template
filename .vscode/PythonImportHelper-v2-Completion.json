@@ -217,14 +217,6 @@
         "documentation": {}
     },
     {
-        "label": "BaseSettings",
-        "importPath": "pydantic_settings",
-        "description": "pydantic_settings",
-        "isExtraImport": true,
-        "detail": "pydantic_settings",
-        "documentation": {}
-    },
-    {
         "label": "declarative_base",
         "importPath": "sqlalchemy.ext.declarative",
         "description": "sqlalchemy.ext.declarative",
@@ -242,6 +234,14 @@
     },
     {
         "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -281,7 +281,39 @@
         "documentation": {}
     },
     {
-        "label": "Depends",
+        "label": "settings",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "db.database",
+        "description": "db.database",
+        "isExtraImport": true,
+        "detail": "db.database",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "database",
+        "importPath": "db",
+        "description": "db",
+        "isExtraImport": true,
+        "detail": "db",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -289,7 +321,7 @@
         "documentation": {}
     },
     {
-        "label": "FastAPI",
+        "label": "status",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -305,6 +337,38 @@
         "documentation": {}
     },
     {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UrlResponse",
+        "importPath": "schemas.urls",
+        "description": "schemas.urls",
+        "isExtraImport": true,
+        "detail": "schemas.urls",
+        "documentation": {}
+    },
+    {
         "label": "RedirectResponse",
         "importPath": "starlette.responses",
         "description": "starlette.responses",
@@ -313,11 +377,67 @@
         "documentation": {}
     },
     {
-        "label": "HTTP_201_CREATED",
-        "importPath": "starlette.status",
-        "description": "starlette.status",
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
         "isExtraImport": true,
-        "detail": "starlette.status",
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "conint",
+        "importPath": "pydantic.types",
+        "description": "pydantic.types",
+        "isExtraImport": true,
+        "detail": "pydantic.types",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "BaseSettings",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "shorten_url",
+        "importPath": "routes",
+        "description": "routes",
+        "isExtraImport": true,
+        "detail": "routes",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
         "documentation": {}
     },
     {
@@ -335,14 +455,6 @@
         "description": "functools",
         "isExtraImport": true,
         "detail": "functools",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
         "documentation": {}
     },
     {
@@ -523,6 +635,114 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "api.db.database",
+        "description": "api.db.database",
+        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "api.db.database",
+        "documentation": {}
+    },
+    {
+        "label": "SQLALCHEMY_DATABASE_URL",
+        "kind": 5,
+        "importPath": "api.db.database",
+        "description": "api.db.database",
+        "peekOfCode": "SQLALCHEMY_DATABASE_URL = settings.database_url\nengine = create_engine(\n    \"postgresql://postgres:Nhatdien123@localhost:5432/url-shortener\"\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db",
+        "detail": "api.db.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "api.db.database",
+        "description": "api.db.database",
+        "peekOfCode": "engine = create_engine(\n    \"postgresql://postgres:Nhatdien123@localhost:5432/url-shortener\"\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:",
+        "detail": "api.db.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "api.db.database",
+        "description": "api.db.database",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "api.db.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "api.db.database",
+        "description": "api.db.database",
+        "peekOfCode": "Base = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "api.db.database",
+        "documentation": {}
+    },
+    {
+        "label": "Urls",
+        "kind": 6,
+        "importPath": "api.models.models",
+        "description": "api.models.models",
+        "peekOfCode": "class Urls(Base):\n    __tablename__ = \"urls\"\n    id = Column(Integer, primary_key=True, index=True, nullable=False)\n    long_url = Column(String, index=True, nullable=False)\n    short_url = Column(String, index=True, nullable=False)\n    created_at = Column(TIMESTAMP, server_default=text(\"now()\"), nullable=False)",
+        "detail": "api.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "generate_array",
+        "kind": 2,
+        "importPath": "api.routes.shorten_url",
+        "description": "api.routes.shorten_url",
+        "peekOfCode": "def generate_array():\n    return [\"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"0\", \n            \"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\",\n            \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\",\n            \"u\", \"v\", \"w\", \"x\", \"y\", \"z\",\"A\", \"B\", \"C\", \"D\",\n            \"E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"K\", \"L\", \"M\",\n            \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\"]\ndef encrypt_url(id: int) -> str:\n    array = generate_array()\n    base = len(array)",
+        "detail": "api.routes.shorten_url",
+        "documentation": {}
+    },
+    {
+        "label": "encrypt_url",
+        "kind": 2,
+        "importPath": "api.routes.shorten_url",
+        "description": "api.routes.shorten_url",
+        "peekOfCode": "def encrypt_url(id: int) -> str:\n    array = generate_array()\n    base = len(array)\n    encrypted_url = \"\"\n    while id > 0:\n        encrypted_url = array[id % base] + encrypted_url\n        id //= base\n    return encrypted_url\n@router.get(\"/shorten_url/\", response_model=UrlResponse)\ndef login(db: Session = Depends(database.get_db), short_url: str = None):",
+        "detail": "api.routes.shorten_url",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "api.routes.shorten_url",
+        "description": "api.routes.shorten_url",
+        "peekOfCode": "def login(db: Session = Depends(database.get_db), short_url: str = None):\n    db_url = db.query(models.Urls).filter(models.Urls.short_url == short_url).first()\n    if db_url is None:\n        raise HTTPException(status_code=404, detail=\"Url not found\")\n    return RedirectResponse(url=db_url.long_url, status_code=301)\n@router.post(\"/shorten_url/\", response_model=UrlResponse)\ndef login(db: Session = Depends(database.get_db), long_url: str = None):\n    long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url).first()\n    if long_url_queried is not None:\n        return long_url_queried",
+        "detail": "api.routes.shorten_url",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "api.routes.shorten_url",
+        "description": "api.routes.shorten_url",
+        "peekOfCode": "def login(db: Session = Depends(database.get_db), long_url: str = None):\n    long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url).first()\n    if long_url_queried is not None:\n        return long_url_queried\n    else:\n        db_url = models.Urls(long_url=long_url, short_url='')\n        db.add(db_url)\n        db.commit()\n        long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url).first()\n        url_with_shortened = models.Urls(long_url=long_url, short_url=encrypt_url(long_url_queried.id))",
+        "detail": "api.routes.shorten_url",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "api.routes.shorten_url",
+        "description": "api.routes.shorten_url",
+        "peekOfCode": "router = APIRouter(tags=[\"Shorten Url\"])\ndef generate_array():\n    return [\"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"0\", \n            \"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\",\n            \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\",\n            \"u\", \"v\", \"w\", \"x\", \"y\", \"z\",\"A\", \"B\", \"C\", \"D\",\n            \"E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"K\", \"L\", \"M\",\n            \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\"]\ndef encrypt_url(id: int) -> str:\n    array = generate_array()",
+        "detail": "api.routes.shorten_url",
+        "documentation": {}
+    },
+    {
+        "label": "UrlResponse",
+        "kind": 6,
+        "importPath": "api.schemas.urls",
+        "description": "api.schemas.urls",
+        "peekOfCode": "class UrlResponse(BaseModel):\n    id: int\n    long_url: str\n    short_url: str\n    created_at: datetime",
+        "detail": "api.schemas.urls",
+        "documentation": {}
+    },
+    {
         "label": "Settings",
         "kind": 6,
         "importPath": "api.config",
@@ -541,48 +761,12 @@
         "documentation": {}
     },
     {
-        "label": "get_db",
+        "label": "root",
         "kind": 2,
-        "importPath": "api.database",
-        "description": "api.database",
-        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
-        "detail": "api.database",
-        "documentation": {}
-    },
-    {
-        "label": "SQLALCHEMY_DATABASE_URL",
-        "kind": 5,
-        "importPath": "api.database",
-        "description": "api.database",
-        "peekOfCode": "SQLALCHEMY_DATABASE_URL = \"postgresql://postgres:Nhatdien123@localhost:5432/url-shortener\"\nengine = create_engine(\n    SQLALCHEMY_DATABASE_URL, connect_args={\"check_same_thread\": False}\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db",
-        "detail": "api.database",
-        "documentation": {}
-    },
-    {
-        "label": "engine",
-        "kind": 5,
-        "importPath": "api.database",
-        "description": "api.database",
-        "peekOfCode": "engine = create_engine(\n    SQLALCHEMY_DATABASE_URL, connect_args={\"check_same_thread\": False}\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:",
-        "detail": "api.database",
-        "documentation": {}
-    },
-    {
-        "label": "SessionLocal",
-        "kind": 5,
-        "importPath": "api.database",
-        "description": "api.database",
-        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
-        "detail": "api.database",
-        "documentation": {}
-    },
-    {
-        "label": "Base",
-        "kind": 5,
-        "importPath": "api.database",
-        "description": "api.database",
-        "peekOfCode": "Base = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
-        "detail": "api.database",
+        "importPath": "api.main",
+        "description": "api.main",
+        "peekOfCode": "def root():\n    return {\"message\": \"siuuuuuuu!\"}\n#Users API",
+        "detail": "api.main",
         "documentation": {}
     },
     {
@@ -590,17 +774,17 @@
         "kind": 5,
         "importPath": "api.main",
         "description": "api.main",
-        "peekOfCode": "app = FastAPI(swagger_ui_parameters={\"tryItOutEnabled\": True})\n@app.get(\"/\")\nasync def root():\n    return RedirectResponse(app.docs_url)",
+        "peekOfCode": "app = FastAPI()\norigins = [\n    \"*\",\n    \"http://localhost\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],",
         "detail": "api.main",
         "documentation": {}
     },
     {
-        "label": "Urls",
-        "kind": 6,
-        "importPath": "api.models",
-        "description": "api.models",
-        "peekOfCode": "class Urls(Base):\n    __tablename__ = \"urls\"\n    id = Column(Integer, primary_key=True, index=True, nullable=False)\n    long_url = Column(String, index=True, nullable=False)\n    short_url = Column(String, index=True, nullable=False)\n    created_at = Column(TIMESTAMP, server_default=text(\"now()\"), nullable=False)",
-        "detail": "api.models",
+        "label": "origins",
+        "kind": 5,
+        "importPath": "api.main",
+        "description": "api.main",
+        "peekOfCode": "origins = [\n    \"*\",\n    \"http://localhost\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],",
+        "detail": "api.main",
         "documentation": {}
     },
     {

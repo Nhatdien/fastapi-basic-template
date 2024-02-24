@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Boolean,ARRAY, TIMESTAMP, text, ForeignKey
 from sqlalchemy.orm import relationship
-from .database import Base
+from db.database import Base
 
 class Urls(Base):
     __tablename__ = "urls"
