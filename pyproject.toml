@@ -22,6 +22,7 @@ psycopg2-binary = "^2.9.9"
 httpx = "^0.26.0"
 redis = "^5.0.1"
 pydantic-settings = "^2.2.0"
+python-multipart = "^0.0.9"
 
 [tool.poetry.group.dev]
 optional = true

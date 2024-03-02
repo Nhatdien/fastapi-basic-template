@@ -217,6 +217,14 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "api.config",
+        "description": "api.config",
+        "isExtraImport": true,
+        "detail": "api.config",
+        "documentation": {}
+    },
+    {
         "label": "declarative_base",
         "importPath": "sqlalchemy.ext.declarative",
         "description": "sqlalchemy.ext.declarative",
@@ -366,6 +374,22 @@
         "description": "schemas.urls",
         "isExtraImport": true,
         "detail": "schemas.urls",
+        "documentation": {}
+    },
+    {
+        "label": "jsonable_encoder",
+        "importPath": "fastapi.encoders",
+        "description": "fastapi.encoders",
+        "isExtraImport": true,
+        "detail": "fastapi.encoders",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
         "documentation": {}
     },
     {
@@ -621,7 +645,7 @@
         "kind": 5,
         "importPath": "alembic.env",
         "description": "alembic.env",
-        "peekOfCode": "config = context.config\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.\nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here\n# for 'autogenerate' support\n# from myapp import mymodel\n# target_metadata = mymodel.Base.metadata\ntarget_metadata = None",
+        "peekOfCode": "config = context.config\nconfig.set_main_option(\"sqlalchemy.url\", settings.database_url)\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.\nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here\n# for 'autogenerate' support\n# from myapp import mymodel\n# target_metadata = mymodel.Base.metadata",
         "detail": "alembic.env",
         "documentation": {}
     },
@@ -648,7 +672,7 @@
         "kind": 5,
         "importPath": "api.db.database",
         "description": "api.db.database",
-        "peekOfCode": "SQLALCHEMY_DATABASE_URL = settings.database_url\nengine = create_engine(\n    \"postgresql://postgres:Nhatdien123@localhost:5432/url-shortener\"\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db",
+        "peekOfCode": "SQLALCHEMY_DATABASE_URL = settings.database_url\nengine = create_engine(\n    SQLALCHEMY_DATABASE_URL\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db",
         "detail": "api.db.database",
         "documentation": {}
     },
@@ -657,7 +681,7 @@
         "kind": 5,
         "importPath": "api.db.database",
         "description": "api.db.database",
-        "peekOfCode": "engine = create_engine(\n    \"postgresql://postgres:Nhatdien123@localhost:5432/url-shortener\"\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:",
+        "peekOfCode": "engine = create_engine(\n    SQLALCHEMY_DATABASE_URL\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:",
         "detail": "api.db.database",
         "documentation": {}
     },
@@ -711,7 +735,16 @@
         "kind": 2,
         "importPath": "api.routes.shorten_url",
         "description": "api.routes.shorten_url",
-        "peekOfCode": "def login(db: Session = Depends(database.get_db), short_url: str = None):\n    db_url = db.query(models.Urls).filter(models.Urls.short_url == short_url).first()\n    if db_url is None:\n        raise HTTPException(status_code=404, detail=\"Url not found\")\n    return RedirectResponse(url=db_url.long_url, status_code=301)\n@router.post(\"/shorten_url/\", response_model=UrlResponse)\ndef login(db: Session = Depends(database.get_db), long_url: str = None):\n    long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url).first()\n    if long_url_queried is not None:\n        return long_url_queried",
+        "peekOfCode": "def login(db: Session = Depends(database.get_db), short_url: str = None):\n    db_url = db.query(models.Urls).filter(models.Urls.short_url == short_url).first()\n    if db_url is None:\n        raise HTTPException(status_code=404, detail=\"Url not found\")\n    return RedirectResponse(url=db_url.long_url, status_code=301)\n@router.get(\"/shorten_url/get_all\")\ndef login(db: Session = Depends(database.get_db)):\n    db_urls = db.query(models.Urls).all()\n    return db_urls\n@router.post(\"/shorten_url/\", response_model=UrlResponse)",
+        "detail": "api.routes.shorten_url",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "api.routes.shorten_url",
+        "description": "api.routes.shorten_url",
+        "peekOfCode": "def login(db: Session = Depends(database.get_db)):\n    db_urls = db.query(models.Urls).all()\n    return db_urls\n@router.post(\"/shorten_url/\", response_model=UrlResponse)\ndef login(db: Session = Depends(database.get_db), long_url: str = None):\n    long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url).first()\n    if long_url_queried is not None:\n        return long_url_queried\n    else:\n        db_url = models.Urls(long_url=long_url, short_url='')",
         "detail": "api.routes.shorten_url",
         "documentation": {}
     },

@@ -5,6 +5,8 @@ from fastapi import Response, status, HTTPException, Depends, APIRouter
 from typing import List
 from sqlalchemy.orm import Session
 from schemas.urls import UrlResponse
+from fastapi.encoders import jsonable_encoder
+from fastapi.responses import JSONResponse
 from starlette.responses import RedirectResponse
 
 
@@ -35,6 +37,12 @@ def login(db: Session = Depends(database.get_db), short_url: str = None):
         raise HTTPException(status_code=404, detail="Url not found")
     return RedirectResponse(url=db_url.long_url, status_code=301)
 
+@router.get("/shorten_url/get_all")
+def login(db: Session = Depends(database.get_db)):
+    db_urls = db.query(models.Urls).all()
+
+    return db_urls
+
 @router.post("/shorten_url/", response_model=UrlResponse)
 def login(db: Session = Depends(database.get_db), long_url: str = None):
     long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url).first()
@@ -49,7 +57,7 @@ def login(db: Session = Depends(database.get_db), long_url: str = None):
         long_url_queried = db.query(models.Urls).filter(models.Urls.long_url == long_url)
         url_id = long_url_queried.first().id
         url_with_shortened = models.Urls(long_url=long_url, short_url=encrypt_url(url_id))
-        long_url_queried.update({"short_url": url_with_shortened.short_url}, synchronize_session=False)
+        long_url_queried.update(jsonable_encoder(url_with_shortened), synchronize_session=False)
         db.commit() 
         return long_url_queried.first()
 

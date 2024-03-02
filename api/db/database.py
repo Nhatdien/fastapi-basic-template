@@ -7,7 +7,7 @@ from config import settings
 SQLALCHEMY_DATABASE_URL = settings.database_url
 
 engine = create_engine(
-    "postgresql://postgres:Nhatdien123@localhost:5432/url-shortener"
+    SQLALCHEMY_DATABASE_URL
 )
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
